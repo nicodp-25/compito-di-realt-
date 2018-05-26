@@ -51,31 +51,22 @@ font.sistema1 { padding:90px;
      CLICCA PER SCOPRIRE QUANTE SCHEDINE AVRAI IN OMAGGIO ALLA REGISTRAZIONE DEL NOSTRO SITO(max 5 schedine).
   </font>
 </p>
-
-<button onclick="myFunction()">CLICCA</button>
-
-<p id="NUMERO">
-    
-</p>
-
 <script>
-function myFunction() {
-    var x = Math.floor((Math.random() * 5) + 1);
-    document.getElementById("NUMERO").innerHTML = x;
-}
-</script>
-
-</body>
-</html>
-
-
-
-	
-	
+	function randNum(){
    
-   
- 
-  
+     document.getElementById("numero").innerHTML =
+     Math.floor(Math.random() * 50 ) + 1;
+	 }
+ </script>
+<form name="form1">
+    <input type="text" name="nminimo" id="n1" value="1">NUMERO MINIMO</input>
+	   <br>
+    <input type="text" name="nmassimo" id="n1" value="50">NUMERO MASSIMO</input>
+	   <br>
+    <button type="button" onclick="randNum()">VAI</button>
+           <br>
+    <p id="numero"> </p>
+ </form>
 </body>
 </html>
 </style>
