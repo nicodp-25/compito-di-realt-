@@ -38,25 +38,38 @@ font.sistema1 { padding:90px;
 
 <ul>
   <li><a href="home.html">HOME</a></li>
-  <li><a class="active" href="pronostici.html">PRONOSTICI WEEKEND</a></li>
+  <li><a href="pronostici.html">PRONOSTICI WEEKEND</a></li>
   <li><a href="contatti.html">CONTATTI</a></li>
-  <li><a href="premio.html">PREMIO</a></li>
-
+  <li><a class="active" href="premio.html">PREMIO</a></li>
 </ul>
-   <br>
-    <font color="white" align="left" size="7"> 
-      BOMBA DEL SABATO
-    </font>
-	  <div class="app">
-       <a href="pronostici2.html" target="blank"><div id="deviceready" class="blink">
-              <p class="blink">
-			      <font color="#FF8141">
-				      SCOPRI UN'ALTRA SCHEDINA
-				   </font>
-			  </p>
-      </div>
-	<hr>
-    <img src="img\schedina1.png" height="65%" align="left">
+
+   <html>
+<body>
+
+<p>
+  <font color="white">
+     CLICCA PER SCOPRIRE QUANTE SCHEDINE AVRAI IN OMAGGIO ALLA REGISTRAZIONE DEL NOSTRO SITO(max 5 schedine).
+  </font>
+</p>
+
+<button onclick="myFunction()">CLICCA</button>
+
+<p id="NUMERO">
+    
+</p>
+
+<script>
+function myFunction() {
+    var x = Math.floor((Math.random() * 5) + 1);
+    document.getElementById("NUMERO").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+
+
+
 	
 	
    
